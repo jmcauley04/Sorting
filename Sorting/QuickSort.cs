@@ -40,7 +40,7 @@
                     Swap(numbers, low, high);
             }
 
-            // swap pivot with left pointer
+            // if pivot is less than the left pointers number, swap pivot with left pointer
             if (pivot < numbers[low])
                 Swap(numbers, pivotIndex, low);
 
