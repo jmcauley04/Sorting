@@ -10,7 +10,7 @@
             if (size > 1)
             {
                 // split the array along the center by creating 2 arrays (non-stable)
-                SplitArrays(numbers, size, out int[] left, out int[] right);
+                Split(numbers, size, out int[] left, out int[] right);
 
                 // Recursively MergeSort the individuals
                 Sort(left);
@@ -40,7 +40,7 @@
             }
         }
 
-        private static void SplitArrays(int[] numbers, int size, out int[] left, out int[] right)
+        private static void Split(int[] numbers, int size, out int[] left, out int[] right)
         {
             // find the center
             var center = size / 2;
